@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pizza Order Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1>Pizza Order Form</h1>
+        <form action="process_order.php" method="post"> <!-- Form to capture user's pizza order -->
+            <label for="pizza_type">Select Your Pizza:</label> <!-- Label for pizza type dropdown -->
+            <select name="pizza_type" required> <!-- Dropdown to select pizza type, required field -->
+                <option value="" disabled selected>Select an option</option> 
+                <option value="cheese">Cheese Pizza</option> <!-- Option for cheese pizza -->
+                <option value="pepperoni">Pepperoni Pizza</option> <!-- Option for pepperoni pizza -->
+                <option value="vegetarian">Vegetarian Pizza</option> <!-- Option for vegetarian pizza -->
+                
+            </select>
+            <button type="submit">Place Order</button> <!-- Submit button to place the pizza order -->
+        </form>
+    </div>
+</body>
+</html>
